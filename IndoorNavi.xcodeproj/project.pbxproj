@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E8ACD0817C402CC0005B36B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8ACD0717C402CC0005B36B /* Foundation.framework */; };
+		2E8ACD0A17C402CC0005B36B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8ACD0917C402CC0005B36B /* CoreGraphics.framework */; };
+		2E8ACD0C17C402CC0005B36B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8ACD0B17C402CC0005B36B /* UIKit.framework */; };
+		2E8ACD1217C402CC0005B36B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E8ACD1017C402CC0005B36B /* InfoPlist.strings */; };
+		2E8ACD1417C402CC0005B36B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8ACD1317C402CC0005B36B /* main.m */; };
+		2E8ACD1817C402CC0005B36B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8ACD1717C402CC0005B36B /* AppDelegate.m */; };
+		2E8ACD1B17C402CC0005B36B /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E8ACD1917C402CC0005B36B /* Main_iPhone.storyboard */; };
+		2E8ACD1E17C402CC0005B36B /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E8ACD1C17C402CC0005B36B /* Main_iPad.storyboard */; };
+		2E8ACD2117C402CC0005B36B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8ACD2017C402CC0005B36B /* ViewController.m */; };
+		2E8ACD2317C402CC0005B36B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E8ACD2217C402CC0005B36B /* Images.xcassets */; };
+		2E8ACD2A17C402CC0005B36B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8ACD2917C402CC0005B36B /* XCTest.framework */; };
+		2E8ACD2B17C402CC0005B36B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8ACD0717C402CC0005B36B /* Foundation.framework */; };
+		2E8ACD2C17C402CC0005B36B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8ACD0B17C402CC0005B36B /* UIKit.framework */; };
+		2E8ACD3417C402CC0005B36B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E8ACD3217C402CC0005B36B /* InfoPlist.strings */; };
+		2E8ACD3617C402CC0005B36B /* IndoorNaviTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8ACD3517C402CC0005B36B /* IndoorNaviTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E8ACD2D17C402CC0005B36B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E8ACCFC17C402CC0005B36B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E8ACD0317C402CC0005B36B;
+			remoteInfo = IndoorNavi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E8ACD0417C402CC0005B36B /* IndoorNavi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IndoorNavi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E8ACD0717C402CC0005B36B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2E8ACD0917C402CC0005B36B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2E8ACD0B17C402CC0005B36B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2E8ACD0F17C402CC0005B36B /* IndoorNavi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IndoorNavi-Info.plist"; sourceTree = "<group>"; };
+		2E8ACD1117C402CC0005B36B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2E8ACD1317C402CC0005B36B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2E8ACD1517C402CC0005B36B /* IndoorNavi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IndoorNavi-Prefix.pch"; sourceTree = "<group>"; };
+		2E8ACD1617C402CC0005B36B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2E8ACD1717C402CC0005B36B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2E8ACD1A17C402CC0005B36B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		2E8ACD1D17C402CC0005B36B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		2E8ACD1F17C402CC0005B36B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2E8ACD2017C402CC0005B36B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2E8ACD2217C402CC0005B36B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2E8ACD2817C402CC0005B36B /* IndoorNaviTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IndoorNaviTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E8ACD2917C402CC0005B36B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2E8ACD3117C402CC0005B36B /* IndoorNaviTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IndoorNaviTests-Info.plist"; sourceTree = "<group>"; };
+		2E8ACD3317C402CC0005B36B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2E8ACD3517C402CC0005B36B /* IndoorNaviTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IndoorNaviTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E8ACD0117C402CC0005B36B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E8ACD0A17C402CC0005B36B /* CoreGraphics.framework in Frameworks */,
+				2E8ACD0C17C402CC0005B36B /* UIKit.framework in Frameworks */,
+				2E8ACD0817C402CC0005B36B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E8ACD2517C402CC0005B36B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E8ACD2A17C402CC0005B36B /* XCTest.framework in Frameworks */,
+				2E8ACD2C17C402CC0005B36B /* UIKit.framework in Frameworks */,
+				2E8ACD2B17C402CC0005B36B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E8ACCFB17C402CC0005B36B = {
+			isa = PBXGroup;
+			children = (
+				2E8ACD0D17C402CC0005B36B /* IndoorNavi */,
+				2E8ACD2F17C402CC0005B36B /* IndoorNaviTests */,
+				2E8ACD0617C402CC0005B36B /* Frameworks */,
+				2E8ACD0517C402CC0005B36B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2E8ACD0517C402CC0005B36B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E8ACD0417C402CC0005B36B /* IndoorNavi.app */,
+				2E8ACD2817C402CC0005B36B /* IndoorNaviTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E8ACD0617C402CC0005B36B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E8ACD0717C402CC0005B36B /* Foundation.framework */,
+				2E8ACD0917C402CC0005B36B /* CoreGraphics.framework */,
+				2E8ACD0B17C402CC0005B36B /* UIKit.framework */,
+				2E8ACD2917C402CC0005B36B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2E8ACD0D17C402CC0005B36B /* IndoorNavi */ = {
+			isa = PBXGroup;
+			children = (
+				2E8ACD1617C402CC0005B36B /* AppDelegate.h */,
+				2E8ACD1717C402CC0005B36B /* AppDelegate.m */,
+				2E8ACD1917C402CC0005B36B /* Main_iPhone.storyboard */,
+				2E8ACD1C17C402CC0005B36B /* Main_iPad.storyboard */,
+				2E8ACD1F17C402CC0005B36B /* ViewController.h */,
+				2E8ACD2017C402CC0005B36B /* ViewController.m */,
+				2E8ACD2217C402CC0005B36B /* Images.xcassets */,
+				2E8ACD0E17C402CC0005B36B /* Supporting Files */,
+			);
+			path = IndoorNavi;
+			sourceTree = "<group>";
+		};
+		2E8ACD0E17C402CC0005B36B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E8ACD0F17C402CC0005B36B /* IndoorNavi-Info.plist */,
+				2E8ACD1017C402CC0005B36B /* InfoPlist.strings */,
+				2E8ACD1317C402CC0005B36B /* main.m */,
+				2E8ACD1517C402CC0005B36B /* IndoorNavi-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2E8ACD2F17C402CC0005B36B /* IndoorNaviTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E8ACD3517C402CC0005B36B /* IndoorNaviTests.m */,
+				2E8ACD3017C402CC0005B36B /* Supporting Files */,
+			);
+			path = IndoorNaviTests;
+			sourceTree = "<group>";
+		};
+		2E8ACD3017C402CC0005B36B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E8ACD3117C402CC0005B36B /* IndoorNaviTests-Info.plist */,
+				2E8ACD3217C402CC0005B36B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E8ACD0317C402CC0005B36B /* IndoorNavi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E8ACD3917C402CC0005B36B /* Build configuration list for PBXNativeTarget "IndoorNavi" */;
+			buildPhases = (
+				2E8ACD0017C402CC0005B36B /* Sources */,
+				2E8ACD0117C402CC0005B36B /* Frameworks */,
+				2E8ACD0217C402CC0005B36B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IndoorNavi;
+			productName = IndoorNavi;
+			productReference = 2E8ACD0417C402CC0005B36B /* IndoorNavi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2E8ACD2717C402CC0005B36B /* IndoorNaviTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E8ACD3C17C402CC0005B36B /* Build configuration list for PBXNativeTarget "IndoorNaviTests" */;
+			buildPhases = (
+				2E8ACD2417C402CC0005B36B /* Sources */,
+				2E8ACD2517C402CC0005B36B /* Frameworks */,
+				2E8ACD2617C402CC0005B36B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E8ACD2E17C402CC0005B36B /* PBXTargetDependency */,
+			);
+			name = IndoorNaviTests;
+			productName = IndoorNaviTests;
+			productReference = 2E8ACD2817C402CC0005B36B /* IndoorNaviTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E8ACCFC17C402CC0005B36B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Patrick Jayet";
+				TargetAttributes = {
+					2E8ACD2717C402CC0005B36B = {
+						TestTargetID = 2E8ACD0317C402CC0005B36B;
+					};
+				};
+			};
+			buildConfigurationList = 2E8ACCFF17C402CC0005B36B /* Build configuration list for PBXProject "IndoorNavi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E8ACCFB17C402CC0005B36B;
+			productRefGroup = 2E8ACD0517C402CC0005B36B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E8ACD0317C402CC0005B36B /* IndoorNavi */,
+				2E8ACD2717C402CC0005B36B /* IndoorNaviTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E8ACD0217C402CC0005B36B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E8ACD1E17C402CC0005B36B /* Main_iPad.storyboard in Resources */,
+				2E8ACD2317C402CC0005B36B /* Images.xcassets in Resources */,
+				2E8ACD1B17C402CC0005B36B /* Main_iPhone.storyboard in Resources */,
+				2E8ACD1217C402CC0005B36B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E8ACD2617C402CC0005B36B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E8ACD3417C402CC0005B36B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E8ACD0017C402CC0005B36B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E8ACD2117C402CC0005B36B /* ViewController.m in Sources */,
+				2E8ACD1817C402CC0005B36B /* AppDelegate.m in Sources */,
+				2E8ACD1417C402CC0005B36B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E8ACD2417C402CC0005B36B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E8ACD3617C402CC0005B36B /* IndoorNaviTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E8ACD2E17C402CC0005B36B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E8ACD0317C402CC0005B36B /* IndoorNavi */;
+			targetProxy = 2E8ACD2D17C402CC0005B36B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2E8ACD1017C402CC0005B36B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E8ACD1117C402CC0005B36B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2E8ACD1917C402CC0005B36B /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E8ACD1A17C402CC0005B36B /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		2E8ACD1C17C402CC0005B36B /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E8ACD1D17C402CC0005B36B /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		2E8ACD3217C402CC0005B36B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E8ACD3317C402CC0005B36B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E8ACD3717C402CC0005B36B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2E8ACD3817C402CC0005B36B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E8ACD3A17C402CC0005B36B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IndoorNavi/IndoorNavi-Prefix.pch";
+				INFOPLIST_FILE = "IndoorNavi/IndoorNavi-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2E8ACD3B17C402CC0005B36B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IndoorNavi/IndoorNavi-Prefix.pch";
+				INFOPLIST_FILE = "IndoorNavi/IndoorNavi-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2E8ACD3D17C402CC0005B36B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IndoorNavi.app/IndoorNavi";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IndoorNavi/IndoorNavi-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "IndoorNaviTests/IndoorNaviTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		2E8ACD3E17C402CC0005B36B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IndoorNavi.app/IndoorNavi";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IndoorNavi/IndoorNavi-Prefix.pch";
+				INFOPLIST_FILE = "IndoorNaviTests/IndoorNaviTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E8ACCFF17C402CC0005B36B /* Build configuration list for PBXProject "IndoorNavi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E8ACD3717C402CC0005B36B /* Debug */,
+				2E8ACD3817C402CC0005B36B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E8ACD3917C402CC0005B36B /* Build configuration list for PBXNativeTarget "IndoorNavi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E8ACD3A17C402CC0005B36B /* Debug */,
+				2E8ACD3B17C402CC0005B36B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2E8ACD3C17C402CC0005B36B /* Build configuration list for PBXNativeTarget "IndoorNaviTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E8ACD3D17C402CC0005B36B /* Debug */,
+				2E8ACD3E17C402CC0005B36B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E8ACCFC17C402CC0005B36B /* Project object */;
+}
