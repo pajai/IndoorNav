@@ -19,12 +19,88 @@
 @property (strong,nonatomic) NSString* lastTextualPos;
 @property (strong,nonatomic) AVSpeechSynthesizer* speeachSynthesizer;
 
+- (void) sayTextIfChanged: (NSString*) text;
 - (void) resetDisplay;
+- (NSArray*) sortBeacons:(NSArray*)beacons;
+- (void) updateUiForNearestBeacon:(CLBeacon*) nearestBeacon;
 
 @end
 
 
 @implementation NavigationController
+
+#pragma mark custom methods
+
+- (void) sayTextIfChanged: (NSString*) text
+{
+    if (![self.lastTextualPos isEqualToString:text]) {
+        self.lastTextualPos = text;
+        AVSpeechUtterance* speechUtterance = [AVSpeechUtterance speechUtteranceWithString:text];
+        speechUtterance.rate = 0.2;
+        [self.speeachSynthesizer speakUtterance:speechUtterance];
+    }
+}
+
+- (void) resetDisplay
+{
+    self.label.text = @"No beacon in range";
+    self.distLabel.text = @"Infinity";
+    self.image.image = nil;
+    
+    [self sayTextIfChanged:self.label.text];
+}
+
+- (NSArray*) sortBeacons:(NSArray*)beacons
+{
+    return [beacons sortedArrayUsingComparator:^(id obj1, id obj2) {
+        CLBeacon* beacon1 = (CLBeacon*)obj1;
+        CLBeacon* beacon2 = (CLBeacon*)obj2;
+        
+        if (beacon1.accuracy < beacon2.accuracy) {
+            return (NSComparisonResult)NSOrderedAscending;
+        }
+        else if (beacon1.accuracy > beacon2.accuracy) {
+            return (NSComparisonResult)NSOrderedDescending;
+        }
+        else {
+            return (NSComparisonResult)NSOrderedSame;
+        }
+    }];
+}
+
+- (void) updateUiForNearestBeacon:(CLBeacon*) nearestBeacon
+{
+    Constants* constants = [Constants shared];
+    NSString* beaconId = [constants attributeForBeacon:nearestBeacon.minor andKey:@"id"];
+    
+    NSString* prefix = nil;
+    NSString* imageName = nil;
+    if (nearestBeacon.proximity == CLProximityImmediate) {
+        prefix = @"At the";
+        imageName = [constants attributeForBeacon:nearestBeacon.minor andKey:@"image_at"];
+    }
+    else if (nearestBeacon.proximity == CLProximityNear) {
+        prefix = @"Near the";
+        imageName = [constants attributeForBeacon:nearestBeacon.minor andKey:@"image_near"];
+    }
+    else if (nearestBeacon.proximity == CLProximityFar) {
+        prefix = @"Far from the";
+    }
+    
+    if (prefix != nil) {
+        NSString* text = [NSString stringWithFormat:@"%@ %@", prefix, beaconId];
+        self.label.text = text;
+        self.distLabel.text = [NSString stringWithFormat:@"%.2f m", nearestBeacon.accuracy];
+        self.image.image = [UIImage imageNamed:imageName];
+        
+        [self sayTextIfChanged:text];
+        
+    }
+    else {
+        [self resetDisplay];
+    }
+    
+}
 
 #pragma mark methods from CLLocationManagerDelegate
 
@@ -59,75 +135,17 @@
 {
     // CoreLocation will call this delegate method at 1 Hz with updated range information.
     // Beacons will be categorized and displayed by proximity.
-    NSLog(@">>> did range beacon");
     
     if ([beacons count] == 0) {
         [self resetDisplay];
         return;
     }
     
-    NSArray* sortedBeacons = [beacons sortedArrayUsingComparator:^(id obj1, id obj2) {
-        CLBeacon* beacon1 = (CLBeacon*)obj1;
-        CLBeacon* beacon2 = (CLBeacon*)obj2;
-
-        if (beacon1.accuracy < beacon2.accuracy) {
-            return (NSComparisonResult)NSOrderedAscending;
-        }
-        else if (beacon1.accuracy > beacon2.accuracy) {
-            return (NSComparisonResult)NSOrderedDescending;
-        }
-        else {
-            return (NSComparisonResult)NSOrderedSame;
-        }
-    }];
-    
+    NSArray* sortedBeacons = [self sortBeacons:beacons];
     CLBeacon* nearestBeacon = [sortedBeacons objectAtIndex:0];
-
-    Constants* constants = [Constants shared];
-    NSString* beaconId = [constants attributeForBeacon:nearestBeacon.minor andKey:@"id"];
-    
-    NSString* prefix = nil;
-    NSString* imageName = nil;
-    if (nearestBeacon.proximity == CLProximityImmediate) {
-        prefix = @"At the";
-        imageName = [constants attributeForBeacon:nearestBeacon.minor andKey:@"image_at"];
-    }
-    else if (nearestBeacon.proximity == CLProximityNear) {
-        prefix = @"Near the";
-        imageName = [constants attributeForBeacon:nearestBeacon.minor andKey:@"image_near"];
-    }
-    else if (nearestBeacon.proximity == CLProximityFar) {
-        prefix = @"Far from the";
-    }
-    
-    if (prefix != nil) {
-        NSString* text = [NSString stringWithFormat:@"%@ %@", prefix, beaconId];
-        self.label.text = text;
-        self.distLabel.text = [NSString stringWithFormat:@"%.2f m", nearestBeacon.accuracy];
-        self.image.image = [UIImage imageNamed:imageName];
-        
-        // text to speech
-        if (![self.lastTextualPos isEqualToString:text]) {
-            self.lastTextualPos = text;
-            AVSpeechUtterance* speechUtterance = [AVSpeechUtterance speechUtteranceWithString:text];
-            speechUtterance.rate = 0.2;
-            [self.speeachSynthesizer speakUtterance:speechUtterance];
-        }
-        
-    }
-    else {
-        [self resetDisplay];
-    }
+    [self updateUiForNearestBeacon:nearestBeacon];
 
 }
-
-- (void) resetDisplay
-{
-    self.label.text = @"No beacon in range";
-    self.distLabel.text = @"Infinity";
-    self.image.image = nil;
-}
-
 
 #pragma mark methods from UIViewController
 
@@ -161,8 +179,6 @@
     
     [self.locationManager startMonitoringForRegion:self.region];
     [self.locationManager startRangingBeaconsInRegion:self.region];
-
-    //[[UIApplication sharedApplication] setupScreenMirroring];
     
     self.distLabel.text = @"infinity";
 }
