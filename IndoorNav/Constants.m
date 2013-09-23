@@ -13,8 +13,6 @@
 @property (strong, nonatomic) NSDictionary* beaconData;
 @end
 
-// Wisplinghoff Jonas
-// Hi, the UUID is: "B1C376BF-00E1-4B35-85BE-5F3835A037E0", Major: 1 and Minor 0,1,2
 
 @implementation Constants
 
@@ -34,15 +32,19 @@
     self = [super init];
     if(self)
     {
-        //self.beaconUuid  = [[NSUUID alloc] initWithUUIDString:@"BF8E3EEB-39BE-CE37-27C7-5EE7EB4B058D"]; // ti tag
-        self.beaconUuid  = [[NSUUID alloc] initWithUUIDString:@"E2C56DB5-DFFB-48D2-B060-D0F5A71096E0"];
+        NSString* uuid = [[NSUserDefaults standardUserDefaults] stringForKey:@"uuid_preference"];
+        self.beaconUuid  = [[NSUUID alloc] initWithUUIDString:uuid];
         
+        NSString* minor1 = [[NSUserDefaults standardUserDefaults] stringForKey:@"minor1_preference"];
+        NSNumber* minor1Nb = [NSNumber numberWithInt:[minor1 integerValue]];
+        NSString* minor2 = [[NSUserDefaults standardUserDefaults] stringForKey:@"minor2_preference"];
+        NSNumber* minor2Nb = [NSNumber numberWithInt:[minor2 integerValue]];
         self.beaconData = @{
-            @1:
+            minor1Nb:
                 @{@"id": @"vegetables",
                   @"image_near": @"offer",
                   @"image_at": @"offer"},
-            @2:
+            minor2Nb:
                 @{@"id": @"cash register",
                   @"image_near": @"wife",
                   @"image_at": @"qrcode"},
@@ -64,18 +66,31 @@
 
 - (NSNumber*) major
 {
-    return @1;
+    NSString* major = [[NSUserDefaults standardUserDefaults] stringForKey:@"major_preference"];
+    return [NSNumber numberWithInt:[major integerValue]];
+}
+
+- (NSNumber*) minorBeacon1
+{
+    NSString* major = [[NSUserDefaults standardUserDefaults] stringForKey:@"minor1_preference"];
+    return [NSNumber numberWithInt:[major integerValue]];
+}
+
+- (NSNumber*) minorBeacon2
+{
+    NSString* major = [[NSUserDefaults standardUserDefaults] stringForKey:@"minor2_preference"];
+    return [NSNumber numberWithInt:[major integerValue]];
+}
+
+- (NSNumber*) power
+{
+    return @-59;
 }
 
 - (NSString*) attributeForBeacon: (NSNumber*) minor andKey:(NSString*) key
 {
     NSDictionary* beaconDic = [self.beaconData objectForKey:minor];
     return [beaconDic objectForKey:key];
-}
-
-- (NSNumber*) power
-{
-    return @-59;
 }
 
 @end

@@ -13,9 +13,13 @@
 + (Constants*) shared;
 
 - (NSString*) identifier;
+
 - (NSUUID*) beaconUuid;
 - (NSNumber*) major;
-- (NSString*) attributeForBeacon: (NSNumber*) minor andKey:(NSString*) key;
+- (NSNumber*) minorBeacon1;
+- (NSNumber*) minorBeacon2;
 - (NSNumber*) power;
+
+- (NSString*) attributeForBeacon: (NSNumber*) minor andKey:(NSString*) key;
 
 @end

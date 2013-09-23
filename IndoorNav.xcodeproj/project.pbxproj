@@ -26,6 +26,7 @@
 		2E8D5E1B17C74CEC000D9C9E /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8D5E1A17C74CEC000D9C9E /* NavigationController.m */; };
 		2E8D5E1E17C753D6000D9C9E /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8D5E1D17C753D6000D9C9E /* Constants.m */; };
 		2E8D5E2017C80D8F000D9C9E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8D5E1F17C80D8F000D9C9E /* CoreLocation.framework */; };
+		436B430E17F0A112003F88B6 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 436B430D17F0A112003F88B6 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		2E8D5E1C17C753D6000D9C9E /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		2E8D5E1D17C753D6000D9C9E /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		2E8D5E1F17C80D8F000D9C9E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		436B430D17F0A112003F88B6 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				2E8ACD1017C402CC0005B36B /* InfoPlist.strings */,
 				2E8ACD1317C402CC0005B36B /* main.m */,
 				2E8ACD1517C402CC0005B36B /* IndoorNav-Prefix.pch */,
+				436B430D17F0A112003F88B6 /* Settings.bundle */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				436B430E17F0A112003F88B6 /* Settings.bundle in Resources */,
 				2E8ACD2317C402CC0005B36B /* Images.xcassets in Resources */,
 				2E8ACD1B17C402CC0005B36B /* Main_iPhone.storyboard in Resources */,
 				2E8ACD1217C402CC0005B36B /* InfoPlist.strings in Resources */,

@@ -9,6 +9,7 @@
 #import "RootController.h"
 #import "BeaconController.h"
 #import "NavigationController.h"
+#import "Constants.h"
 
 @interface RootController ()
 
@@ -22,11 +23,11 @@
 {
     if ([@"VegetablesBeacon" isEqualToString:segue.identifier]) {
         BeaconController* target = (BeaconController*)segue.destinationViewController;
-        target.minor = @1;
+        target.minor = [[Constants shared] minorBeacon1];
     }
     else if ([@"CashRegisterBeacon" isEqualToString:segue.identifier]) {
         BeaconController* target = (BeaconController*)segue.destinationViewController;
-        target.minor = @2;
+        target.minor = [[Constants shared] minorBeacon2];
     }
     else if ([@"RangeBeacons" isEqualToString:segue.identifier]) {
 
