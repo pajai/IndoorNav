@@ -20,7 +20,7 @@
 		2E8ACD2B17C402CC0005B36B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8ACD0717C402CC0005B36B /* Foundation.framework */; };
 		2E8ACD2C17C402CC0005B36B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8ACD0B17C402CC0005B36B /* UIKit.framework */; };
 		2E8ACD3417C402CC0005B36B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E8ACD3217C402CC0005B36B /* InfoPlist.strings */; };
-		2E8ACD3617C402CC0005B36B /* IndoorNaviTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8ACD3517C402CC0005B36B /* IndoorNaviTests.m */; };
+		2E8ACD3617C402CC0005B36B /* IndoorNavTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8ACD3517C402CC0005B36B /* IndoorNavTests.m */; };
 		2E8ACD4117C404EC0005B36B /* BeaconController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8ACD4017C404EC0005B36B /* BeaconController.m */; };
 		2E8D5E1817C74A1D000D9C9E /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8D5E1717C74A1D000D9C9E /* CoreBluetooth.framework */; };
 		2E8D5E1B17C74CEC000D9C9E /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8D5E1A17C74CEC000D9C9E /* NavigationController.m */; };
@@ -39,25 +39,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2E8ACD0417C402CC0005B36B /* IndoorNavi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IndoorNavi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E8ACD0417C402CC0005B36B /* IndoorNav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IndoorNav.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8ACD0717C402CC0005B36B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2E8ACD0917C402CC0005B36B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2E8ACD0B17C402CC0005B36B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		2E8ACD0F17C402CC0005B36B /* IndoorNavi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IndoorNavi-Info.plist"; sourceTree = "<group>"; };
+		2E8ACD0F17C402CC0005B36B /* IndoorNav-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IndoorNav-Info.plist"; sourceTree = "<group>"; };
 		2E8ACD1117C402CC0005B36B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2E8ACD1317C402CC0005B36B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2E8ACD1517C402CC0005B36B /* IndoorNavi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IndoorNavi-Prefix.pch"; sourceTree = "<group>"; };
+		2E8ACD1517C402CC0005B36B /* IndoorNav-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IndoorNav-Prefix.pch"; sourceTree = "<group>"; };
 		2E8ACD1617C402CC0005B36B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2E8ACD1717C402CC0005B36B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2E8ACD1A17C402CC0005B36B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		2E8ACD1F17C402CC0005B36B /* RootController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootController.h; sourceTree = "<group>"; };
 		2E8ACD2017C402CC0005B36B /* RootController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootController.m; sourceTree = "<group>"; };
 		2E8ACD2217C402CC0005B36B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		2E8ACD2817C402CC0005B36B /* IndoorNaviTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IndoorNaviTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E8ACD2817C402CC0005B36B /* IndoorNavTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IndoorNavTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8ACD2917C402CC0005B36B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		2E8ACD3117C402CC0005B36B /* IndoorNaviTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IndoorNaviTests-Info.plist"; sourceTree = "<group>"; };
+		2E8ACD3117C402CC0005B36B /* IndoorNavTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IndoorNavTests-Info.plist"; sourceTree = "<group>"; };
 		2E8ACD3317C402CC0005B36B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2E8ACD3517C402CC0005B36B /* IndoorNaviTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IndoorNaviTests.m; sourceTree = "<group>"; };
+		2E8ACD3517C402CC0005B36B /* IndoorNavTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IndoorNavTests.m; sourceTree = "<group>"; };
 		2E8ACD3F17C404EC0005B36B /* BeaconController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconController.h; sourceTree = "<group>"; };
 		2E8ACD4017C404EC0005B36B /* BeaconController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconController.m; sourceTree = "<group>"; };
 		2E8D5E1717C74A1D000D9C9E /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
@@ -107,8 +107,8 @@
 		2E8ACD0517C402CC0005B36B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2E8ACD0417C402CC0005B36B /* IndoorNavi.app */,
-				2E8ACD2817C402CC0005B36B /* IndoorNaviTests.xctest */,
+				2E8ACD0417C402CC0005B36B /* IndoorNav.app */,
+				2E8ACD2817C402CC0005B36B /* IndoorNavTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,16 +143,17 @@
 				2E8D5E1D17C753D6000D9C9E /* Constants.m */,
 				2E8ACD0E17C402CC0005B36B /* Supporting Files */,
 			);
-			path = IndoorNavi;
+			name = IndoorNavi;
+			path = IndoorNav;
 			sourceTree = "<group>";
 		};
 		2E8ACD0E17C402CC0005B36B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2E8ACD0F17C402CC0005B36B /* IndoorNavi-Info.plist */,
+				2E8ACD0F17C402CC0005B36B /* IndoorNav-Info.plist */,
 				2E8ACD1017C402CC0005B36B /* InfoPlist.strings */,
 				2E8ACD1317C402CC0005B36B /* main.m */,
-				2E8ACD1517C402CC0005B36B /* IndoorNavi-Prefix.pch */,
+				2E8ACD1517C402CC0005B36B /* IndoorNav-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -160,16 +161,17 @@
 		2E8ACD2F17C402CC0005B36B /* IndoorNaviTests */ = {
 			isa = PBXGroup;
 			children = (
-				2E8ACD3517C402CC0005B36B /* IndoorNaviTests.m */,
+				2E8ACD3517C402CC0005B36B /* IndoorNavTests.m */,
 				2E8ACD3017C402CC0005B36B /* Supporting Files */,
 			);
-			path = IndoorNaviTests;
+			name = IndoorNaviTests;
+			path = IndoorNavTests;
 			sourceTree = "<group>";
 		};
 		2E8ACD3017C402CC0005B36B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2E8ACD3117C402CC0005B36B /* IndoorNaviTests-Info.plist */,
+				2E8ACD3117C402CC0005B36B /* IndoorNavTests-Info.plist */,
 				2E8ACD3217C402CC0005B36B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -178,9 +180,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2E8ACD0317C402CC0005B36B /* IndoorNavi */ = {
+		2E8ACD0317C402CC0005B36B /* IndoorNav */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2E8ACD3917C402CC0005B36B /* Build configuration list for PBXNativeTarget "IndoorNavi" */;
+			buildConfigurationList = 2E8ACD3917C402CC0005B36B /* Build configuration list for PBXNativeTarget "IndoorNav" */;
 			buildPhases = (
 				2E8ACD0017C402CC0005B36B /* Sources */,
 				2E8ACD0117C402CC0005B36B /* Frameworks */,
@@ -190,14 +192,14 @@
 			);
 			dependencies = (
 			);
-			name = IndoorNavi;
+			name = IndoorNav;
 			productName = IndoorNavi;
-			productReference = 2E8ACD0417C402CC0005B36B /* IndoorNavi.app */;
+			productReference = 2E8ACD0417C402CC0005B36B /* IndoorNav.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2E8ACD2717C402CC0005B36B /* IndoorNaviTests */ = {
+		2E8ACD2717C402CC0005B36B /* IndoorNavTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2E8ACD3C17C402CC0005B36B /* Build configuration list for PBXNativeTarget "IndoorNaviTests" */;
+			buildConfigurationList = 2E8ACD3C17C402CC0005B36B /* Build configuration list for PBXNativeTarget "IndoorNavTests" */;
 			buildPhases = (
 				2E8ACD2417C402CC0005B36B /* Sources */,
 				2E8ACD2517C402CC0005B36B /* Frameworks */,
@@ -208,9 +210,9 @@
 			dependencies = (
 				2E8ACD2E17C402CC0005B36B /* PBXTargetDependency */,
 			);
-			name = IndoorNaviTests;
+			name = IndoorNavTests;
 			productName = IndoorNaviTests;
-			productReference = 2E8ACD2817C402CC0005B36B /* IndoorNaviTests.xctest */;
+			productReference = 2E8ACD2817C402CC0005B36B /* IndoorNavTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -230,7 +232,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2E8ACCFF17C402CC0005B36B /* Build configuration list for PBXProject "IndoorNavi" */;
+			buildConfigurationList = 2E8ACCFF17C402CC0005B36B /* Build configuration list for PBXProject "IndoorNav" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -243,8 +245,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2E8ACD0317C402CC0005B36B /* IndoorNavi */,
-				2E8ACD2717C402CC0005B36B /* IndoorNaviTests */,
+				2E8ACD0317C402CC0005B36B /* IndoorNav */,
+				2E8ACD2717C402CC0005B36B /* IndoorNavTests */,
 			);
 		};
 /* End PBXProject section */
@@ -288,7 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E8ACD3617C402CC0005B36B /* IndoorNaviTests.m in Sources */,
+				2E8ACD3617C402CC0005B36B /* IndoorNavTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +299,7 @@
 /* Begin PBXTargetDependency section */
 		2E8ACD2E17C402CC0005B36B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2E8ACD0317C402CC0005B36B /* IndoorNavi */;
+			target = 2E8ACD0317C402CC0005B36B /* IndoorNav */;
 			targetProxy = 2E8ACD2D17C402CC0005B36B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -408,10 +410,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "IndoorNavi/IndoorNavi-Prefix.pch";
-				INFOPLIST_FILE = "IndoorNavi/IndoorNavi-Info.plist";
+				GCC_PREFIX_HEADER = "IndoorNav/IndoorNav-Prefix.pch";
+				INFOPLIST_FILE = "IndoorNav/IndoorNav-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = IndoorNav;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -426,10 +428,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "IndoorNavi/IndoorNavi-Prefix.pch";
-				INFOPLIST_FILE = "IndoorNavi/IndoorNavi-Info.plist";
+				GCC_PREFIX_HEADER = "IndoorNav/IndoorNav-Prefix.pch";
+				INFOPLIST_FILE = "IndoorNav/IndoorNav-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = IndoorNav;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -451,8 +453,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "IndoorNaviTests/IndoorNaviTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "IndoorNaviTests/IndoorNavTests-Info.plist";
+				PRODUCT_NAME = IndoorNavTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -469,8 +471,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IndoorNavi/IndoorNavi-Prefix.pch";
-				INFOPLIST_FILE = "IndoorNaviTests/IndoorNaviTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "IndoorNaviTests/IndoorNavTests-Info.plist";
+				PRODUCT_NAME = IndoorNavTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -479,7 +481,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2E8ACCFF17C402CC0005B36B /* Build configuration list for PBXProject "IndoorNavi" */ = {
+		2E8ACCFF17C402CC0005B36B /* Build configuration list for PBXProject "IndoorNav" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2E8ACD3717C402CC0005B36B /* Debug */,
@@ -488,7 +490,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2E8ACD3917C402CC0005B36B /* Build configuration list for PBXNativeTarget "IndoorNavi" */ = {
+		2E8ACD3917C402CC0005B36B /* Build configuration list for PBXNativeTarget "IndoorNav" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2E8ACD3A17C402CC0005B36B /* Debug */,
@@ -497,7 +499,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2E8ACD3C17C402CC0005B36B /* Build configuration list for PBXNativeTarget "IndoorNaviTests" */ = {
+		2E8ACD3C17C402CC0005B36B /* Build configuration list for PBXNativeTarget "IndoorNavTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2E8ACD3D17C402CC0005B36B /* Debug */,
